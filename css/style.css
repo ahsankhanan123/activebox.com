@@ -1,0 +1,489 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  list-style: none;
+}
+html  {font-size: 10px;}
+@media only screen and (max-width: 1280px)    {html {font-size: 60%;}}
+@media only screen and (max-width: 1124px)    {html {font-size: 55%;}}
+@media only screen and (max-width: 1080px)    {html {font-size: 50%;}}
+@media only screen and (max-width: 992px)    {html {font-size: 45%;}}
+@media only screen and (max-width: 768px)    {html {font-size: 38%;}}
+@media only screen and (max-width: 440px)    {html {font-size: 34%;}}
+
+
+
+.container   {
+  width: 1440px;
+  margin: auto;
+}
+@media only screen and (max-width: 1540px)    {.container {width: 92%;}}
+@media only screen and (max-width: 1280px)    {.container {width: 92%;}}
+@media only screen and (max-width: 992px)    {.container {width: 95%;}}
+@media only screen and (max-width: 768px)    {.container {width: 100%; padding: 10px;}}
+
+
+
+.con11   {
+  width: 1170px;
+  margin: auto;
+}
+@media only screen and (max-width: 1210px)    {.con11 {width: 92%;}}
+@media only screen and (max-width: 992px)    {.con11 {width: 95%;}}
+@media only screen and (max-width: 768px)    {.con11 {width: 100%; padding: 10px;}}
+
+
+:root    {
+  --red: #e84545;
+  --blue: #3a3e64;
+}
+::selection     {
+  background-color: #3a3e64;
+  color: #fff;
+}
+
+
+
+/* ============================= SECTION 1 =============================== */
+.home   {
+  width: 100%;
+  height: 750px;
+  background-image: url("../img/home.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.header   {
+  width: 100%;
+  height: 100px;
+}
+.header-container   {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo   {
+  width: 200px;
+  z-index: 9;
+}
+.logo img   {
+  width: 200px;
+  object-fit: cover;
+}
+.nav   {}
+.nav ul   {}
+.nav ul li   {
+  display: inline-block;
+}
+.nav ul li a   {
+  color: #fff;
+  font-size: 14px;
+  margin: 0px 20px;
+  transition: 1s ease;
+}
+.nav ul li a:hover   {
+  color: var(--red);
+}
+.toggle   {
+  display: none;
+  padding: 20px;
+  z-index: 9;
+}
+.bar   {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: #fff;
+  margin: 4px;
+  transition: all 1s ease;
+}
+.home-container   {
+  height: calc(100% - 100px);
+  text-align: center;
+  color: #fff;
+  padding-top: 60px;
+}
+.home-container .home-h1   {
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+.home-container .home-h1:nth-child(1)  {
+  margin-top: 70px;
+
+}
+.home-p   {
+  font-size: 1.4rem;
+}
+.home-btn   {
+  display: block;
+  width: 200px;
+  height: 40px;
+  margin: auto;
+  margin-top: 50px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 14px;
+  background-color: var(--red);
+  transition: all 1s ease;
+}
+.home-btn:hover   {
+  background-color: #fff;
+  color: var(--red);
+}
+
+
+
+
+
+@media only screen and (max-width: 768px)    {
+  .nav   {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: #3a3e64;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    transition: all .6s ease;
+  }
+  .active.nav    {
+    top: 0%;
+    left: 0%;
+    transform: none;
+    border-radius: 0%;
+    opacity: 1;
+    overflow: none;
+  } 
+.nav ul    {}
+.nav ul li    {
+  display: block;
+  text-align: center;
+  margin: 30px 0;
+}
+.nav ul li a    {
+  font-size: 22px;
+}
+
+
+.toggle   {
+  display: block;
+  z-index: 9;
+}
+.active.toggle .bar:nth-child(1)  {
+  transform: translateY(8px) rotate(45deg);
+}
+.active.toggle .bar:nth-child(2)  {
+  transform: translateX(-9px);
+  opacity: 0;
+}
+.active.toggle .bar:nth-child(3)  {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+
+}
+/* ============================= SECTION 1 =============================== */
+
+/* ============================= SECTION 2 =============================== */
+.section2   {
+  width: 100%;
+  padding: 6rem 0rem;
+  background-color: #fff;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.section2-container   {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.section2-card   {
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+  transition: all 1s ease;
+}
+.section2-card:hover   {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.section2-card img   {
+  width: 100px;
+  object-fit: cover;
+}
+.section2-card .info   {}
+.section2-card .info h1   {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 10px 0px;
+}
+.section2-card .info p   {
+  font-size: 11px;
+}
+/* ============================= SECTION 2 =============================== */
+
+/* ============================= SECTION 3 =============================== */
+.section3   {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.section3-container   {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.section3-gallery-card   {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.section3-gallery-card img   {
+  width: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.section3-gallery-card .overlay   {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e84545;
+  color: #fff;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease;
+}
+.section3-gallery-card:hover .overlay   {
+  opacity: 0.7;
+}
+.section3-gallery-card .overlay h1   {
+  font-size: 18px;
+}
+.section3-gallery-card .overlay p   {
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 992px)    {
+  .section3-container   {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 592px)    {
+  .section3-container   {
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+}
+/* ============================= SECTION 3 =============================== */
+
+/* ============================= SECTION 4 =============================== */
+.section4   {
+  width: 100%;
+  padding: 6rem 0rem;
+  background-color: #fff;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.section4-container   {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0rem;
+}
+.section4-card   {
+  width: 250px;
+  margin: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: all .6s ease;
+}
+.section4-card:hover   {
+  transform: translateY(10px);
+}
+.section4-card .img    {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+}
+.section4-card .img img   {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section4-card .info   {
+  padding: 20px;
+}
+.section4-card .info h1   {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.section4-card .info h5   {
+  font-size: 12px;
+  color: #e84545;
+  margin-bottom: 5px;
+}
+.section4-card .info p    {
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+/* ============================= SECTION 4 =============================== */
+
+/* ============================= SECTION 5 =============================== */
+.section5   {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.section5-container   {
+  width: 100%;
+}
+.section5-container .testimonial   {
+  display: flex;
+}
+.section5-container .testimonial .row1   {
+  width: 50%;
+}
+.section5-container .testimonial .row1 img   {
+  width: 100%;
+  height: 100%;
+}
+.section5-container .testimonial .row2   {
+  width: 50%;
+  padding: 4rem;
+  background-color: #53354a;
+  color: #fff;
+}
+.section5-container .testimonial .row2 h1   {
+  font-family: 'Cardo', serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.section5-container .testimonial .row2 p    {
+  font-size: 1.4rem;
+}
+.owl-theme .owl-dots .owl-dot span {
+  background-color: #bbbb;
+  position: relative;
+  left: 100px;
+  bottom: 40px;
+}
+/* ============================= SECTION 5 =============================== */
+
+/* ============================= SECTION 6 =============================== */
+.section6   {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 6rem 0rem;
+}
+.section6-container   {
+  text-align: center;
+}
+.section6-container h1   {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.section6-container p   {
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+}
+.section6-container .btn   {
+  padding: 7px 40px;
+  background-color: #e84545;
+  color: #fff;
+  font-size: 14px;
+}
+/* ============================= SECTION 6 =============================== */
+
+/* ============================= FOOTER =============================== */
+.footer   {
+  width: 100%;
+  padding: 3rem 0rem;
+  background-color: #3a3e64;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.footer-container   {
+  width: 90%;
+  padding: 5rem 0rem;
+  margin: auto;
+}
+.footer-container .footer-row1   {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.footer-container .footer-row1 .footer-col   {
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  text-align: center;
+  color: #fff;
+  margin: auto;
+}
+.footer-container .footer-row1 .footer-col h1   {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.footer-container .footer-row1 .footer-col p   {
+  font-size: 11px;
+}
+.footer-container .footer-row1 .footer-col .fa-facebook-f   {
+  padding: 10px 13px;
+}
+.footer-container .footer-row1 .footer-col i   {
+  padding: 10px;
+  font-size: 16px;
+  margin: 5px;
+  border: 1px solid #fff;
+}
+.footer-container .footer-row2   {
+  width: 100%;
+  text-align: center;
+}
+.footer-container .footer-row2 p   {
+  color: #fff;
+  font-size: 14px;
+}
+/* ============================= FOOTER =============================== */
